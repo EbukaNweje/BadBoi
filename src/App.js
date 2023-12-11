@@ -72,7 +72,7 @@ const App = () => {
         <Route path="/settings" element={<Setting/>}/>
         <Route path="/settings" element={<Setting/>}/>
         <Route path="/withdraw" element={<Withdraw/>}/>
-        <Route path="/deposit" element={<WalletId/>}/>
+        {/* <Route path="/deposit" element={<WalletId/>}/> */}
         <Route path="/qrcodeset" element={<Qrcodeset/>}/>
         <Route path="/bnb" element={<BnB/>}/>
         <Route path="/tether" element={<Tether/>}/>

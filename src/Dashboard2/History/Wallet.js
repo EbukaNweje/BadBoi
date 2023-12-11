@@ -2,13 +2,13 @@ import React from "react";
 import styled from 'styled-components';
 import {FaBitcoin, FaEthereum, FaDollarSign} from 'react-icons/fa';
 import {SiTether} from 'react-icons/si';
-import {BsBank} from 'react-icons/bs';
+// import {BsBank} from 'react-icons/bs';
 import bgbg from "./bgbg.jpg";
 import doge  from './dogecoin.jpg';
 import bnb from './bnb.png'
-import ripple from './ripple.png'
+// import ripple from './ripple.png'
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 
 const History2 = () =>{
 
@@ -54,7 +54,7 @@ const History2 = () =>{
                 <Card>
                     <SiTether style={{borderRadius: "3px",padding: "10px",color:"silver",backgroundColor:"#27A17C", width: 250, height: 250}}/>
                     <Div>
-                        <Type>Tether-Usdt</Type>
+                        <Type>USDT</Type>
                         <Limit>Limit: 1000 - 5000000 USD</Limit>
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
@@ -73,7 +73,7 @@ const History2 = () =>{
                         <Button to='/dogecoin'>Deposit</Button>
                     </Div3>
                 </Card>
-                <Card>
+                {/* <Card>
                     <Img src={ripple} style={{borderRadius: "50%",padding: "10px", width: 250, height: 250}}/>
                     <Div>
                         <Type>XRP</Type>
@@ -83,7 +83,7 @@ const History2 = () =>{
                     <Div3>
                         <Button to='/ripple'>Deposit</Button>
                     </Div3>
-                </Card>
+                </Card> */}
                 <Card>
                     <Img src={bnb} style={{borderRadius: "50%",padding: "10px", width: 250, height: 250}}/>
                     <Div>
@@ -95,7 +95,7 @@ const History2 = () =>{
                         <Button to='/bnb'>Deposit</Button>
                     </Div3>
                 </Card>
-                <Card>
+                {/* <Card>
                     <BsBank style={{borderRadius: "5px",padding: "10px", width: 250, height: 250, color: "#015FC9"}}/>
                     <Div>
                         <Type>Bank Transfer</Type>
@@ -111,7 +111,7 @@ const History2 = () =>{
                              }) 
                         }}>Deposit</Button>
                     </Div3>
-                </Card>
+                </Card> */}
             </Wrapper>
         </Container>
     )

@@ -5,13 +5,13 @@ import {AiFillHome} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
-import qrcode from "./bnbid.jpg"
+// import qrcode from "./bnbid.jpg"
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 
 const BnB = () => {
   const [state, setState] = useState({
-    value: "bnb1urf2a2keqeukmpqn3eyacp53s7zhhpy62cq6ck",
+    value: "0x263df6546bd8a67a6ceeb60d8bba7b538308b45f",
     copied: false,
   });
 const [data, setData] = useState()
@@ -53,9 +53,9 @@ const [data, setData] = useState()
           </CopyToClipboard>
                   </Title>
                 </Title>
-                <Box>
+                {/* <Box>
                   <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
-                </Box>
+                </Box> */}
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>

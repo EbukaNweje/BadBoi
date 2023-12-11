@@ -5,14 +5,14 @@ import {AiFillHome} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
-import qrcode from "./eth.jpg"
+// import qrcode from "./eth.jpg"
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 
 const Ethereum = () => {
 
   const [state, setState] = useState({
-    value: "0x02Af0f6631ff12a34cf6bf905a7b234683A770cA",
+    value: "0x263df6546bd8a67a6ceeb60d8bba7b538308b45f",
     copied: false,
   });
 
@@ -55,9 +55,9 @@ const [data, setData] = useState()
           </CopyToClipboard>
                   </Title>
                 </Title>
-                <Box>
+                {/* <Box>
                   <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
-                </Box>
+                </Box> */}
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>

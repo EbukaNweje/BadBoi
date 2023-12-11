@@ -5,13 +5,13 @@ import {AiFillHome} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
-import qrcode from "./tether1.jpg"
+// import qrcode from "./tether1.jpg"
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 
 const Tether = () => {
   const [state, setState] = useState({
-    value: "TFA8zuVoXH3Tra4DwMr5dUpKB31mGTH8tk",
+    value: "TAxKxhwiGjuzQRXpy9uSd5uCpBABsDYg5c",
     copied: false,
   });
 
@@ -54,9 +54,9 @@ const [data, setData] = useState()
           </CopyToClipboard>
                   </Title>
                 </Title>
-                <Box>
+                {/* <Box>
                   <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
-                </Box>
+                </Box> */}
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>

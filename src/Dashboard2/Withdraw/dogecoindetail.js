@@ -5,12 +5,12 @@ import {AiFillHome} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
-import qrcode from "./dogecoinid.jpg"
+// import qrcode from "./dogecoinid.jpg"
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const DogeCoin = () => {
   const [state, setState] = useState({
-    value: "DNRDKX9ZySoFfXXsbhVYrmGfZTRnMBNhLp",
+    value: "DPK2fqjh1Tc4eqWHSSGpTL8hVU8RGmLw7Z",
     copied: false,
   });
 
@@ -52,9 +52,9 @@ const [data, setData] = useState()
             <button>{state.copied ? "Copied" : "Copy text"}</button>
           </CopyToClipboard></Title>
                 </Title>
-                <Box>
+                {/* <Box>
                   <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
-                </Box>
+                </Box> */}
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>
