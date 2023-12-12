@@ -52,7 +52,7 @@ const DashHeader = () => {
                 </NavHold>
 
                 {
-                    user.isAdmin? <NavHold>
+                    user.status? <NavHold>
                     <MdAddTask/>
                     <Nav to='/updateuser'>Update User</Nav>
                 </NavHold> : null
