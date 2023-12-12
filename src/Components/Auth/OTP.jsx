@@ -65,8 +65,8 @@ const OTP = () => {
   console.log(otp1);
 
   const navigate = useNavigate();
-  const url = `https://preeminent-crypfield.onrender.com/api/verifyotp/${verifyid}`
-  const url2 = `https://preeminent-crypfield.onrender.com/api/resetotp/${verifyid}`
+  const url = `https://badboibackend.onrender.com/api/verifyotp/${verifyid}`
+  const url2 = `https://badboibackend.onrender.com/api/resetotp/${verifyid}`
 
     console.log(verifyid);
 

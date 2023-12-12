@@ -16,14 +16,14 @@ const NewDashboard = () => {
 
   const [modal, setModal] = useState(false)
   const [state, setState] = useState({
-    value: "https://preeminentcrypfield.com/",
+    value: "https://preeminentcryp.vercel.app/",
     copied: false,
   });
 
 
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://preeminent-crypfield.onrender.com/api/userdata/${userid}`
+  const url = `https://badboibackend.onrender.com/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res =>setData(res.data.data))
