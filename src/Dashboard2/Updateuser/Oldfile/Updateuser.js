@@ -97,6 +97,10 @@ const UpdateWallet = ({Display}) => {
           <label>Email:</label>
             <p> {props.email}</p>
           </TextDiv>
+          <TextDiv>
+          <label>Phone Number:</label>
+            <p> {props.phoneNumber}</p>
+          </TextDiv>
          
           {/* <InputData>
             <label>last deposit: </label>
