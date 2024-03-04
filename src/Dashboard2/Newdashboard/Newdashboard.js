@@ -16,7 +16,7 @@ const NewDashboard = () => {
 
   const [modal, setModal] = useState(false)
   const [state, setState] = useState({
-    value: "https://preeminentcryp.vercel.app/",
+    value: "https://crypfield.vercel.app/",
     copied: false,
   });
 
