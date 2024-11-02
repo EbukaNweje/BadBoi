@@ -34,43 +34,33 @@ const Login = () => {
   const Login = (e) => {
     e.preventDefault()
     setLoading(true)
-    Axios.post(url, Data)
-    .then((res) => {
-      console.log(res)
-      localStorage.setItem("User", JSON.stringify(res.data));
-      console.log(res);
+    console.log("first")
+  //   Axios.post(url, Data)
+  //   .then((res) => {
+  //     console.log(res)
+  //     localStorage.setItem("User", JSON.stringify(res.data));
+  //     console.log(res);
 
-      const getId = JSON.parse(localStorage.getItem("User"));
-      console.log(getId._id);
-     setMessage({ error: true, msg: "successfully!" });
-    setTimeout(() => {
-      navigate(`/dashboard/${getId._id}`)
-      window.location.reload()
-    }, [2000]);
-    // window.location.reload();
-    }
-    )
-    // .then(()=>{ 
-    //   setMessage({ error: true, msg: "successfully!" });
-    // //   const getId = JSON.parse(localStorage.getItem("User"));
-    // //   console.log(getId.data._id);
-    // //  setMessage({ error: true, msg: "successfully!" });
-    // // setTimeout(() => {
-    // //   navigate(`/user/dashboard/${getId.data._id}`)
-    // // }, [2000]);
-    // })
-    .catch((error)=>{
-      console.log(error)
-      setMessage({error: false, msg: error.response.data.message});
-    setLoading(false)
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: error.response.data.message,
-   }) 
-    console.log(error)
-    //  reset(),
-  })
+  //     const getId = JSON.parse(localStorage.getItem("User"));
+  //     console.log(getId._id);
+  //    setMessage({ error: true, msg: "successfully!" });
+  //   setTimeout(() => {
+  //     navigate(`/dashboard/${getId._id}`)
+  //     window.location.reload()
+  //   }, [2000]);
+  //   }
+  //   )
+  //   .catch((error)=>{
+  //     console.log(error)
+  //     setMessage({error: false, msg: error.response.data.message});
+  //   setLoading(false)
+  //   Swal.fire({
+  //     icon: 'error',
+  //     title: 'Oops...',
+  //     text: error.response.data.message,
+  //  }) 
+  //   console.log(error)
+  // })
   }
   
 
