@@ -37,14 +37,14 @@ const SignUp = () => {
     console.log(message);
 
     const Data = {fullName, userName, email, retypeEmail, password, confirmPassword, phoneNumber}
-    const url = "https://badboibackend1.onrender.com/api/register"
+    const url = "https://badboibackend.onrender.com/api/register"
 
     // console.log(url)
 
     const Siginup = (e) => {
         e.preventDefault()
         setLoading(true)
-        console.log("Data"); 
+        console.log(Data); 
 
         Axios.post(url,Data)
         .then((res) => {
@@ -59,6 +59,7 @@ const SignUp = () => {
        }) 
         console.log("this is the data", getId.data._id)
           setTimeout(() => {
+            // navigate(`/dashboard/${getId.data._id}`)
             navigate(`/verify/${getId.data._id}`)
             console.log(getId._id);
           }, [2000]);
