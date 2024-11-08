@@ -33,7 +33,7 @@ const Landing = () => {
   return (
     <div>
       {
-        loading? <Div>
+        loadingn? <Div>
           <Logo src={logo} alt="logo"/>  
           <FallingLines
       color="#fff"
