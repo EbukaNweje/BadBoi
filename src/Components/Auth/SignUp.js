@@ -46,34 +46,34 @@ const SignUp = () => {
         setLoading(true)
         console.log("Data"); 
 
-      //   Axios.post(url,Data)
-      //   .then((res) => {
-      //   localStorage.setItem("User", JSON.stringify(res.data));
-      //   setMessage({ error: true, msg: res.data.message});
+        Axios.post(url,Data)
+        .then((res) => {
+        localStorage.setItem("User", JSON.stringify(res.data));
+        setMessage({ error: true, msg: res.data.message});
 
-      //   const getId = JSON.parse(localStorage.getItem("User"))
-      //   Swal.fire({
-      //     icon: 'success',
-      //     title: 'Success',
-      //     text: "Check your email for account verification to continue",
-      //  }) 
-      //   console.log("this is the data", getId.data._id)
-      //     setTimeout(() => {
-      //       navigate(`/verify/${getId.data._id}`)
-      //       console.log(getId._id);
-      //     }, [2000]);
-      //   }
-      //   )
-      //   .catch((error)=>{
-      //     console.log(error);
-      //     Swal.fire({
-      //       icon: 'error',
-      //       title: 'Oops!!!',
-      //       text: error.response.data.message,
-      //       });
-      //     setLoading(false);
-      //     setMessage({error: false, msg: error.data.message });
-      // });
+        const getId = JSON.parse(localStorage.getItem("User"))
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: "Check your email for account verification to continue",
+       }) 
+        console.log("this is the data", getId.data._id)
+          setTimeout(() => {
+            navigate(`/verify/${getId.data._id}`)
+            console.log(getId._id);
+          }, [2000]);
+        }
+        )
+        .catch((error)=>{
+          console.log(error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops!!!',
+            text: error.response.data.message,
+            });
+          setLoading(false);
+          setMessage({error: false, msg: error.data.message });
+      });
 
     };
 

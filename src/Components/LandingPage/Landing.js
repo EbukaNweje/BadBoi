@@ -25,15 +25,15 @@ const Landing = () => {
   const [loading, setLoading] = React.useState(true);
 
   useEffect(()=>{
-    // setTimeout(() => {
-    //   setLoading(false)
-    // }, [5000])
+    setTimeout(() => {
+      setLoading(false)
+    }, [5000])
   });
 
   return (
     <div>
       {
-        loadingn? <Div>
+        loading? <Div>
           <Logo src={logo} alt="logo"/>  
           <FallingLines
       color="#fff"
