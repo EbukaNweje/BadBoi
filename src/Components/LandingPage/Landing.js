@@ -24,11 +24,11 @@ const Landing = () => {
 
   const [loading, setLoading] = React.useState(true);
 
-  // useEffect(()=>{
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, [5000])
-  // });
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false)
+    }, [5000])
+  });
 
   return (
     <div>
