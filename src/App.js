@@ -40,13 +40,14 @@ import ForgotPassword from './Components/Auth/ForgotPassword';
 import RestPassword from './Components/Auth/RestPassword';
 import SendWithdrawReq from './Dashboard2/SendWithdraw';
 import Scame from './Components/GooleScame/Scame';
+import Section from './Components/Section/Section';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header/>
+      {/* <Header/> */}
       <Routes>
-        <Route path='/' element={<Landing/>}/>
+        <Route path='/' element={<Section/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/forgotpassword' element={<ForgotPassword/>}/>
         <Route path='/restLink/:userid/:tokenid' element={<RestPassword/>}/>
@@ -85,7 +86,7 @@ const App = () => {
         <Route path="/sendwithdraw" element={<SendWithdrawReq/>}/>
         </Route>
       </Routes>
-      <FooterNew/> 
+      {/* <FooterNew/>  */}
       {/* <Footer/>  */}
        </BrowserRouter>
   ) 
