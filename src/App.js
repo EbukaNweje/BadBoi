@@ -45,9 +45,9 @@ import Section from './Components/Section/Section';
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Header/> */}
+      <Header/>
       <Routes>
-        <Route path='/' element={<Section/>}/>
+        <Route path='/' element={<Landing/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/forgotpassword' element={<ForgotPassword/>}/>
         <Route path='/restLink/:userid/:tokenid' element={<RestPassword/>}/>
@@ -86,7 +86,7 @@ const App = () => {
         <Route path="/sendwithdraw" element={<SendWithdrawReq/>}/>
         </Route>
       </Routes>
-      {/* <FooterNew/>  */}
+      <FooterNew/> 
       {/* <Footer/>  */}
        </BrowserRouter>
   ) 
