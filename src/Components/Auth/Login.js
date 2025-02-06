@@ -26,7 +26,7 @@ const Login = () => {
 
     console.log(message);
     
-  const url = "https://badboibackend2.onrender.com/api/login"
+  const url = "https://badboibackend.onrender.com/api/login"
   const Data = {email, password}
   console.log(url)
   console.log(Data)
