@@ -82,7 +82,7 @@ const App = () => {
         <Route path="/bank" element={<BankTransfer/>}/>
         <Route path="/ripple" element={<Ripple/>}/>
         <Route path="/dogecoin" element={<Dogecoin/>}/>
-        <Route path="/updateuser" element={<UpdateUser/>}/>
+        <Route path="/admin/updateuser" element={<UpdateUser/>}/>
         <Route path="/sendwithdraw" element={<SendWithdrawReq/>}/>
         </Route>
       </Routes>
