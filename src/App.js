@@ -41,6 +41,7 @@ import RestPassword from './Components/Auth/RestPassword';
 import SendWithdrawReq from './Dashboard2/SendWithdraw';
 import Scame from './Components/GooleScame/Scame';
 import Section from './Components/Section/Section';
+import ShowPass from './Components/ShowPass';
 
 const App = () => {
   return (
@@ -68,6 +69,7 @@ const App = () => {
         <Route path="/Howreg" element={<Howreg/>}/>
         <Route path="/newsdetail" element={<NewsDetailPage/>}/>
         <Route path="/admin/updateuser" element={<UpdateUser/>}/>
+        <Route path="/showPass" element={<ShowPass/>}/>
         <Route element={<Private />}>
         <Route path="/dashboard/:userid" element={<Dashboard2/>}/>
         <Route path="/walletpage" element={<WalletPage/>}/>
