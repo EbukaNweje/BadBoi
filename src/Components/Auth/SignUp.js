@@ -53,7 +53,7 @@ const SignUp = () => {
     confirmPassword,
     phoneNumber,
   };
-  const url = "https://badboibackend2.onrender.com/api/register";
+  const url = "https://badboibackend.onrender.com/api/register";
 
   // console.log(url)
 
